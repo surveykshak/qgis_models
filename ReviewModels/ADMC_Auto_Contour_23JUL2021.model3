@@ -1,0 +1,323 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:contour_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:contour" name="alg_id" type="QString"/>
+      <Option value="Contour" name="component_description" type="QString"/>
+      <Option value="283.2409488139826" name="component_pos_x" type="double"/>
+      <Option value="116.51086142322097" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:contour_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BAND" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="CREATE_3D" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="true" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="HEIGHT_M" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="IGNORE_NODATA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="1enterdemraster" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERVAL" type="List">
+          <Option type="Map">
+            <Option value="2entercontourinterval" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option value="" name="expression" type="QString"/>
+            <Option value="3" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OFFSET" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="double"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:reprojectlayer_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:reprojectlayer" name="alg_id" type="QString"/>
+      <Option value="Reproject layer" name="component_description" type="QString"/>
+      <Option value="357.1540574282146" name="component_pos_x" type="double"/>
+      <Option value="202.2594257178527" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:reprojectlayer_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="gdal:contour_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="QgsCoordinateReferenceSystem">
+              <spatialrefsys>
+                <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+                <srsid>3857</srsid>
+                <srid>3857</srid>
+                <authid>EPSG:3857</authid>
+                <description>WGS 84 / Pseudo Mercator</description>
+                <projectionacronym>merc</projectionacronym>
+                <ellipsoidacronym>WGS84</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:reprojectlayer_2" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:reprojectlayer" name="alg_id" type="QString"/>
+      <Option value="Reproject output layer" name="component_description" type="QString"/>
+      <Option value="405.8064918851437" name="component_pos_x" type="double"/>
+      <Option value="462.6267166042446" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:reprojectlayer_2" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="CONTOURS_AUTOGEN" type="Map">
+          <Option value="native:reprojectlayer_2" name="child_id" type="QString"/>
+          <Option value="CONTOURS_AUTOGEN" name="component_description" type="QString"/>
+          <Option value="426.8756554307116" name="component_pos_x" type="double"/>
+          <Option value="561.7570536828963" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="CONTOURS_AUTOGEN" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:simplifygeometries_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option value="enteroutputcrs" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:simplifygeometries_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:simplifygeometries" name="alg_id" type="QString"/>
+      <Option value="Simplify" name="component_description" type="QString"/>
+      <Option value="378.26991260923853" name="component_pos_x" type="double"/>
+      <Option value="374.6556803995006" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:simplifygeometries_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:smoothgeometry_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="METHOD" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option value="4entertoleranceinmetre" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:smoothgeometry_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:smoothgeometry" name="alg_id" type="QString"/>
+      <Option value="Smooth" name="component_description" type="QString"/>
+      <Option value="373.11585518102385" name="component_pos_x" type="double"/>
+      <Option value="283.42921348314604" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:smoothgeometry_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:reprojectlayer_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="ITERATIONS" type="List">
+          <Option type="Map">
+            <Option value="3enteriterationhigheriterationmoresmoother" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MAX_ANGLE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="180" name="static_value" type="double"/>
+          </Option>
+        </Option>
+        <Option name="OFFSET" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0.25" name="static_value" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="ADMC" name="model_group" type="QString"/>
+  <Option value="Contour_Generation" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="1enterdemraster" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="1. Enter DEM raster" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="1enterdemraster" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="2entercontourinterval" type="Map">
+      <Option value="1" name="data_type" type="int"/>
+      <Option value="40" name="default" type="QString"/>
+      <Option value="2. Enter contour interval" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="1000" name="max" type="double"/>
+      <Option name="metadata"/>
+      <Option value="0" name="min" type="double"/>
+      <Option value="2entercontourinterval" name="name" type="QString"/>
+      <Option value="number" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="3enteriterationhigheriterationmoresmoother" type="Map">
+      <Option value="1" name="data_type" type="int"/>
+      <Option value="1" name="default" type="QString"/>
+      <Option value="3. Enter iteration (higher iteration more smoother)" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="10" name="max" type="double"/>
+      <Option name="metadata"/>
+      <Option value="0.5" name="min" type="double"/>
+      <Option value="3enteriterationhigheriterationmoresmoother" name="name" type="QString"/>
+      <Option value="number" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="4entertoleranceinmetre" type="Map">
+      <Option value="1" name="data_type" type="int"/>
+      <Option value="1" name="default" type="QString"/>
+      <Option value="4. Enter tolerance in metre (more tolerance less vertices)" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="500" name="max" type="double"/>
+      <Option name="metadata"/>
+      <Option value="0.5" name="min" type="double"/>
+      <Option value="4entertoleranceinmetre" name="name" type="QString"/>
+      <Option value="number" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="enteroutputcrs" type="Map">
+      <Option value="EPSG:4326" name="default" type="QString"/>
+      <Option value="5. Enter output CRS" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="enteroutputcrs" name="name" type="QString"/>
+      <Option value="crs" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="native:reprojectlayer_2:CONTOURS_AUTOGEN" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option value="CONTOURS_AUTOGEN" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="native:reprojectlayer_2:CONTOURS_AUTOGEN" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="1enterdemraster" type="Map">
+      <Option value="1enterdemraster" name="component_description" type="QString"/>
+      <Option value="113" name="component_pos_x" type="double"/>
+      <Option value="23" name="component_pos_y" type="double"/>
+      <Option value="1enterdemraster" name="name" type="QString"/>
+    </Option>
+    <Option name="2entercontourinterval" type="Map">
+      <Option value="2entercontourinterval" name="component_description" type="QString"/>
+      <Option value="360" name="component_pos_x" type="double"/>
+      <Option value="24" name="component_pos_y" type="double"/>
+      <Option value="2entercontourinterval" name="name" type="QString"/>
+    </Option>
+    <Option name="3enteriterationhigheriterationmoresmoother" type="Map">
+      <Option value="3enteriterationhigheriterationmoresmoother" name="component_description" type="QString"/>
+      <Option value="119.00724094881399" name="component_pos_x" type="double"/>
+      <Option value="254.16853932584286" name="component_pos_y" type="double"/>
+      <Option value="3enteriterationhigheriterationmoresmoother" name="name" type="QString"/>
+    </Option>
+    <Option name="4entertoleranceinmetre" type="Map">
+      <Option value="4entertoleranceinmetre" name="component_description" type="QString"/>
+      <Option value="120.64394506866417" name="component_pos_x" type="double"/>
+      <Option value="314.863670411985" name="component_pos_y" type="double"/>
+      <Option value="4entertoleranceinmetre" name="name" type="QString"/>
+    </Option>
+    <Option name="enteroutputcrs" type="Map">
+      <Option value="enteroutputcrs" name="component_description" type="QString"/>
+      <Option value="113.87765293383255" name="component_pos_x" type="double"/>
+      <Option value="410.343570536829" name="component_pos_y" type="double"/>
+      <Option value="enteroutputcrs" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>

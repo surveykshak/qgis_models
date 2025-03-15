@@ -1,0 +1,412 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:warpreproject_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="gdal:warpreproject" type="QString"/>
+      <Option name="component_description" value="Reproject to Mercator" type="QString"/>
+      <Option name="component_pos_x" value="348.2090797546013" type="double"/>
+      <Option name="component_pos_y" value="115.50012269938651" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="gdal:warpreproject_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="dem" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MULTITHREADING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="RESAMPLING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SOURCE_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="entercorrespondingutmcrs" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_EXTENT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_EXTENT_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_RESOLUTION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:simplifygeometries_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:simplifygeometries" type="QString"/>
+      <Option name="component_description" value="Simplify" type="QString"/>
+      <Option name="component_pos_x" value="449.2445771253289" type="double"/>
+      <Option name="component_pos_y" value="588.342600788782" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:simplifygeometries_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="STREAM_AUTOGEN" type="Map">
+          <Option name="child_id" value="native:simplifygeometries_1" type="QString"/>
+          <Option name="component_description" value="STREAM_AUTOGEN" type="QString"/>
+          <Option name="component_pos_x" value="455.67468302658494" type="double"/>
+          <Option name="component_pos_y" value="650.3927987145781" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="STREAM_AUTOGEN" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:smoothgeometry_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="METHOD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="6emtertoleranceforsimplicafication" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:smoothgeometry_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:smoothgeometry" type="QString"/>
+      <Option name="component_description" value="Smooth" type="QString"/>
+      <Option name="component_pos_x" value="413.72145559450786" type="double"/>
+      <Option name="component_pos_y" value="502.3275912941865" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:smoothgeometry_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="saga:channelnetwork_1" type="QString"/>
+            <Option name="output_name" value="SHAPES" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="ITERATIONS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="5entersmoothingiteration" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MAX_ANGLE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="180" type="double"/>
+          </Option>
+        </Option>
+        <Option name="OFFSET" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0.5" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:catchmentarea_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="saga:catchmentarea" type="QString"/>
+      <Option name="component_description" value="Catchment area" type="QString"/>
+      <Option name="component_pos_x" value="504.25079754601245" type="double"/>
+      <Option name="component_pos_y" value="247.54159509202455" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="saga:catchmentarea_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ELEVATION" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="gdal:warpreproject_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="METHOD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:channelnetwork_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="saga:channelnetwork" type="QString"/>
+      <Option name="component_description" value="Channel network" type="QString"/>
+      <Option name="component_pos_x" value="441.840698948291" type="double"/>
+      <Option name="component_pos_y" value="376.30998685363716" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="saga:channelnetwork_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DIV_CELLS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="3tracinglessvaluedensestream" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="DIV_GRID" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="ELEVATION" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="saga:fillsinks_1" type="QString"/>
+            <Option name="output_name" value="RESULT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INIT_GRID" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="saga:catchmentarea_1" type="QString"/>
+            <Option name="output_name" value="FLOW" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INIT_METHOD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INIT_VALUE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="100000" type="double"/>
+          </Option>
+        </Option>
+        <Option name="MINLEN" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="4minsegmentlengthinmetre" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SINKROUTE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TRACE_WEIGHT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:fillsinks_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="saga:fillsinks" type="QString"/>
+      <Option name="component_description" value="Fill sinks" type="QString"/>
+      <Option name="component_pos_x" value="274.5825766871166" type="double"/>
+      <Option name="component_pos_y" value="246.08319018404907" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="saga:fillsinks_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DEM" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="gdal:warpreproject_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MINSLOPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0.01" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" value="ADMC" type="QString"/>
+  <Option name="model_name" value="Auto Stream" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="3tracinglessvaluedensestream" type="Map">
+      <Option name="data_type" value="1" type="int"/>
+      <Option name="default" value="50" type="QString"/>
+      <Option name="description" value="3. Tracing (less value dense stream):" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="max" value="250" type="double"/>
+      <Option name="metadata"/>
+      <Option name="min" value="25" type="double"/>
+      <Option name="name" value="3tracinglessvaluedensestream" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
+    </Option>
+    <Option name="4minsegmentlengthinmetre" type="Map">
+      <Option name="data_type" value="1" type="int"/>
+      <Option name="default" value="50" type="QString"/>
+      <Option name="description" value="4. Min segment length (in metre):" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="max" value="250" type="double"/>
+      <Option name="metadata"/>
+      <Option name="min" value="25" type="double"/>
+      <Option name="name" value="4minsegmentlengthinmetre" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
+    </Option>
+    <Option name="5entersmoothingiteration" type="Map">
+      <Option name="data_type" value="1" type="int"/>
+      <Option name="default" value="1" type="QString"/>
+      <Option name="description" value="5. Enter smoothing iteration:" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="max" value="10" type="double"/>
+      <Option name="metadata"/>
+      <Option name="min" value="0.5" type="double"/>
+      <Option name="name" value="5entersmoothingiteration" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
+    </Option>
+    <Option name="6emtertoleranceforsimplicafication" type="Map">
+      <Option name="data_type" value="1" type="int"/>
+      <Option name="default" value="1" type="QString"/>
+      <Option name="description" value="6. Enter Tolerance for simplification:" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="max" value="10" type="double"/>
+      <Option name="metadata"/>
+      <Option name="min" value="0.5" type="double"/>
+      <Option name="name" value="6emtertoleranceforsimplicafication" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
+    </Option>
+    <Option name="dem" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="1. Enter DEM raster:" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="dem" type="QString"/>
+      <Option name="parameter_type" value="raster" type="QString"/>
+    </Option>
+    <Option name="entercorrespondingutmcrs" type="Map">
+      <Option name="default" value="EPSG:3857" type="QString"/>
+      <Option name="description" value="2. Enter corresponding UTM CRS:" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="entercorrespondingutmcrs" type="QString"/>
+      <Option name="parameter_type" value="crs" type="QString"/>
+    </Option>
+    <Option name="native:simplifygeometries_1:STREAM_AUTOGEN" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="STREAM_AUTOGEN" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="native:simplifygeometries_1:STREAM_AUTOGEN" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="3tracinglessvaluedensestream" type="Map">
+      <Option name="component_description" value="3tracinglessvaluedensestream" type="QString"/>
+      <Option name="component_pos_x" value="167.38797326906197" type="double"/>
+      <Option name="component_pos_y" value="312.74411042944797" type="double"/>
+      <Option name="name" value="3tracinglessvaluedensestream" type="QString"/>
+    </Option>
+    <Option name="4minsegmentlengthinmetre" type="Map">
+      <Option name="component_description" value="4minsegmentlengthinmetre" type="QString"/>
+      <Option name="component_pos_x" value="162.3732091732395" type="double"/>
+      <Option name="component_pos_y" value="406.0187226117442" type="double"/>
+      <Option name="name" value="4minsegmentlengthinmetre" type="QString"/>
+    </Option>
+    <Option name="5entersmoothingiteration" type="Map">
+      <Option name="component_description" value="5entersmoothingiteration" type="QString"/>
+      <Option name="component_pos_x" value="165.3820676307331" type="double"/>
+      <Option name="component_pos_y" value="484.2490425065733" type="double"/>
+      <Option name="name" value="5entersmoothingiteration" type="QString"/>
+    </Option>
+    <Option name="6emtertoleranceforsimplicafication" type="Map">
+      <Option name="component_description" value="6emtertoleranceforsimplicafication" type="QString"/>
+      <Option name="component_pos_x" value="156.35549225825275" type="double"/>
+      <Option name="component_pos_y" value="554.4557398480866" type="double"/>
+      <Option name="name" value="6emtertoleranceforsimplicafication" type="QString"/>
+    </Option>
+    <Option name="dem" type="Map">
+      <Option name="component_description" value="dem" type="QString"/>
+      <Option name="component_pos_x" value="161.0893251533743" type="double"/>
+      <Option name="component_pos_y" value="29.128834355828218" type="double"/>
+      <Option name="name" value="dem" type="QString"/>
+    </Option>
+    <Option name="entercorrespondingutmcrs" type="Map">
+      <Option name="component_description" value="entercorrespondingutmcrs" type="QString"/>
+      <Option name="component_pos_x" value="437.83190184049073" type="double"/>
+      <Option name="component_pos_y" value="28.549447852760736" type="double"/>
+      <Option name="name" value="entercorrespondingutmcrs" type="QString"/>
+    </Option>
+  </Option>
+</Option>
